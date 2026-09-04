@@ -1,0 +1,212 @@
+    :root {
+      font-size: 16px;
+
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Sora", sans-serif;
+      height: 100vh;
+    }
+
+    .author-info {
+      font-size: 14px;
+      text-align: center;
+      margin-top: 16px;
+      color: rgb(55, 65, 81);
+    }
+
+    .author-info a {
+      text-decoration: none;
+    }
+
+    .container {
+      width: 100%;
+      min-height: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero {
+      width: 100%;
+      max-width: 640px;
+      padding: 40px 12px 30px;
+    }
+
+    #logo {
+      display: inline;
+      margin-top: 30px;
+      margin-bottom: 10px;
+      background-color: hsl(42, 91%, 69%);
+      padding: 6px 5px;
+      border-radius: 50%;
+    }
+
+    h1 {
+      font-size: 1.75rem;
+      line-height: 2.65;
+    }
+
+    #details {
+      min-width: 500px;
+      font-size: 1rem;
+      color: #52525A;
+      letter-spacing: 1px;
+      line-height: 1.85;
+    }
+
+    #list {
+      height: 180px;
+      width: 500px;
+      min-width: 350px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 15px;
+      justify-content: center;
+      /* border: 2px solid yellow; */
+    }
+
+    .check-list {
+      display: flex;
+      color: #52525A;
+      gap: 10px;
+      font-size: 0.875rem;
+    }
+
+    .card-box {
+      display: flex;
+      height: fit-content;
+      justify-content: center;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .card {
+      width: 100%;
+      min-width: 500px;
+      margin-bottom: 40px; 
+      box-shadow: 0 20px 50px -10px #e9e9eb;
+      padding: 50px 30px;
+      border-radius: 12px;
+    }
+    
+
+    .stars-logo {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .review {
+        padding: 20px;
+        padding-bottom: 0;
+    }
+
+    .review > span {
+        font-size: 1.05rem;
+        font-weight: 600;
+    }
+
+    .review > p{
+        color: #52525A;
+        font-size: 0.95rem;
+        padding-top: 13px;
+        line-height: 1.9;
+    }
+
+    @media screen and (min-width: 650px) and (max-width: 1024px) {
+        .hero {
+            max-width: 950px;
+        }
+
+        .card-box{
+            align-items: flex-end;
+        }
+
+        .card{
+            padding: 30px 0 30px 40px;
+            max-width: 400px;
+            min-width: 200px;
+            box-shadow: 0 30px 70px -10px #e9e9eb;
+        }
+
+        #google-container {
+            display: flex;
+            justify-content: flex-start;
+            width: 60%;
+        }
+
+        #meta-container {
+            display: flex;
+            width: 90%;
+            justify-content: flex-start;
+        }
+
+
+        .review > span {
+            font-size: 1.2rem;
+        }
+
+        .review > p {
+            font-size: 1.05rem;
+        }
+    }
+
+    @media screen and (min-width:1025px) {
+        .hero{
+            max-width: 1280px;
+            margin-left: 40px;
+            display: flex;
+            justify-content: center;
+        }
+
+        #hero-container{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            max-width: 500px;
+        }
+
+        .card-box{
+            margin-top: 100px;
+            align-items: flex-end;
+            /* justify-content: center; */
+            width: 100%;
+        }
+
+        .card{
+            max-width: 400px;
+            min-width: 200px;
+            box-shadow: 0 20px 70px -10px #e9e9eb;
+            padding: 30px 0 30px 40px;
+        }
+
+        #google-container {
+            display: flex;
+            justify-content: center;
+            width: 70%;
+        }
+
+        #meta-container {
+            display: flex;
+            width: 90%;
+            justify-content: flex-start;
+        }
+
+
+        .review > span {
+            font-size: 1.25rem;
+        }
+
+        .review > p {
+            font-size: 1.1rem;
+        }
+    }
